@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Helper Guide – We’re here to help</title>
+  <meta name="description" content="Get in touch for guidance on Aadhaar, PAN, certificates, and government schemes.">
+  <meta property="og:title" content="Contact Helper Guide">
+  <meta property="og:description" content="Simple help for your documents.">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%230A4B5E'/%3E%3Ccircle cx='220' cy='315' r='120' fill='%231F8B6E' opacity='0.8'/%3E%3Ctext x='400' y='350' font-family='Poppins' font-size='64' fill='white' font-weight='bold'%3EHelper Guide%3C/text%3E%3Ctext x='400' y='420' font-family='Inter' font-size='32' fill='%23E2EEF3'%3EContact Us%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0A4B5E">
+  <link rel="canonical" href="https://helperguide.in/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A4B5E'/%3E%3Cpath d='M30 40 L45 30 L60 40 L60 65 L45 75 L30 65 Z' fill='%23FFFFFF' opacity='0.9'/%3E%3Ctext x='50' y='82' font-family='Poppins' font-size='14' fill='white' text-anchor='middle' font-weight='bold'%3EHG%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo" aria-label="Helper Guide home">Helper Guide</a>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sun-icon"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-content">
+    <div class="container contact-container">
+      <h1 class="page-title">Contact us</h1>
+      <p class="contact-intro">Ask a question or request guidance. We reply within 24 hours.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Other ways</h2>
+          <p>Email: support@helperguide.in</p>
+        </div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group"><label for="name">Full name *</label><input type="text" id="name" name="name" required><div class="error-message" data-error="name"></div></div>
+          <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required><div class="error-message" data-error="email"></div></div>
+          <div class="form-group"><label for="message">Message *</label><textarea id="message" name="message" rows="4" required></textarea><div class="error-message" data-error="message"></div></div>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><span class="footer-logo">Helper Guide</span><p class="footer-tagline">Simple solutions for your government documents</p></div>
+      <div class="footer-links"><h4>Quick links</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-social"><h4>Connect</h4><ul class="social-list" role="list"><li><a href="https://twitter.com/helperguide" target="_blank" rel="noopener noreferrer">Twitter</a></li><li><a href="https://linkedin.com/company/helperguide" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+      <div class="footer-legal"><h4>Legal</h4><ul role="list"><li><a href="legal/privacy.html">Privacy</a></li><li><a href="legal/terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="footer-bottom container"><p>© 2026 Helper Guide. All rights reserved.</p></div>
+  </footer>
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (document.getElementById('contactForm')) initContactForm();
+    });
+  </script>
+</body>
+</html>
