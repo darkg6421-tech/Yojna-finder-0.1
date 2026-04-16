@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://darkg6421-tech.github.io/Yojna-finder-0.1/sitemap.xml
