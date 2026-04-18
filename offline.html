@@ -1,3 +1,35 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Offline – Helper Guide</title><link rel="stylesheet" href="assets/css/style.css"></head>
-<body><main class="error-container"><h1>📡 You're offline</h1><p>Check your connection and try again.</p><a href="index.html" class="btn btn-primary">Retry</a></main></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="You are offline – Yojna Finder." />
+  <meta name="theme-color" content="#1a73e8" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Yojna Finder – Offline</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>You're Offline</h1>
+    <p>It looks like you've lost your internet connection. Please check your network and try again.</p>
+    <button onclick="window.location.reload()">Retry</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yojna Finder. <a href="legal/privacy.html">Privacy Policy</a> | <a href="legal/terms.html">Terms of Service</a></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

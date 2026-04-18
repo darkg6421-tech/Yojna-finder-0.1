@@ -1,81 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services – Aadhaar, PAN, Certificates & Scheme help</title>
-  <meta name="description" content="Step-by-step guides for Aadhaar update, PAN correction, income/caste certificates, and government scheme applications.">
-  <meta property="og:title" content="Helper Guide Services">
-  <meta property="og:description" content="Clear help for Indian government documents.">
-  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%230A4B5E'/%3E%3Ccircle cx='220' cy='315' r='120' fill='%231F8B6E' opacity='0.8'/%3E%3Ctext x='400' y='350' font-family='Poppins' font-size='64' fill='white' font-weight='bold'%3EHelper Guide%3C/text%3E%3Ctext x='400' y='420' font-family='Inter' font-size='32' fill='%23E2EEF3'%3EOur Services%3C/text%3E%3C/svg%3E">
-  <meta name="theme-color" content="#0A4B5E">
-  <link rel="canonical" href="https://helperguide.in/services">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A4B5E'/%3E%3Cpath d='M30 40 L45 30 L60 40 L60 65 L45 75 L30 65 Z' fill='%23FFFFFF' opacity='0.9'/%3E%3Ctext x='50' y='82' font-family='Poppins' font-size='14' fill='white' text-anchor='middle' font-weight='bold'%3EHG%3C/text%3E%3C/svg%3E">
-  <link rel="manifest" href="./manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the services offered by Yojna Finder to discover government schemes." />
+  <meta name="theme-color" content="#1a73e8" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Yojna Finder – Services</title>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
-  <header class="navbar">
-    <div class="container navbar-container">
-      <a href="index.html" class="logo" aria-label="Helper Guide home">Helper Guide</a>
-      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu" aria-expanded="false" aria-controls="navMenu">
-        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
-      </button>
-      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
-        <ul class="nav-links" role="list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="services.html" class="nav-link active">Services</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sun-icon"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-      </div>
-    </div>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main id="main-content" class="page-content">
-    <div class="container">
-      <h1 class="page-title">All services</h1>
-      <div class="search-section">
-        <label for="serviceSearch" class="search-label">Find a service</label>
-        <input type="search" id="serviceSearch" placeholder="e.g., Aadhaar, PAN, certificate..." class="search-input">
-        <div id="searchResults" class="search-results-grid" aria-live="polite"></div>
-      </div>
-      <div class="services-grid" id="servicesGrid">
-        <article class="service-card" id="aadhaar"><div class="service-icon">🆔</div><h3>Aadhaar Update</h3><p>Address, mobile, email, biometric update.</p></article>
-        <article class="service-card" id="pan"><div class="service-icon">💳</div><h3>PAN Card</h3><p>New PAN, correction, reprint.</p></article>
-        <article class="service-card" id="certificates"><div class="service-icon">📜</div><h3>Income / Caste / Domicile</h3><p>State-wise application process.</p></article>
-        <article class="service-card" id="schemes"><div class="service-icon">🏛️</div><h3>Government Schemes</h3><p>Scholarships, PMAY, pensions.</p></article>
-        <article class="service-card" id="verification"><div class="service-icon">✅</div><h3>Document Verification</h3><p>Attestation, form filling support.</p></article>
-      </div>
-    </div>
+  <main>
+    <h1>Our Services</h1>
+    <p>Browse and search through hundreds of government schemes across education, health, housing, and more.</p>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand"><span class="footer-logo">Helper Guide</span><p class="footer-tagline">Simple solutions for your government documents</p></div>
-      <div class="footer-links"><h4>Quick links</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-social"><h4>Connect</h4><ul class="social-list" role="list"><li><a href="https://twitter.com/helperguide" target="_blank" rel="noopener noreferrer">Twitter</a></li><li><a href="https://linkedin.com/company/helperguide" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
-      <div class="footer-legal"><h4>Legal</h4><ul role="list"><li><a href="legal/privacy.html">Privacy</a></li><li><a href="legal/terms.html">Terms</a></li></ul></div>
-    </div>
-    <div class="footer-bottom container"><p>© 2026 Helper Guide. All rights reserved.</p></div>
+  <footer>
+    <p>&copy; 2025 Yojna Finder. <a href="legal/privacy.html">Privacy Policy</a> | <a href="legal/terms.html">Terms of Service</a></p>
   </footer>
-  <script defer src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (document.getElementById('serviceSearch')) initServiceSearch();
-    });
-  </script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
